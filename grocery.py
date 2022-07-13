@@ -42,8 +42,9 @@ class Solution:
         for i in list1:
             if i not in output and i != ' ':
                 output.append(i)
-        for i in listif i not in output and i != '':
-            output.append(i)
+        for i in list2:
+            if i not in output and i != '':
+                output.append(i)
         
         return output
 
