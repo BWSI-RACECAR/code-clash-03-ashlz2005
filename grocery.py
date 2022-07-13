@@ -34,10 +34,16 @@ class Solution:
         # return: list
 
         # TODO: Write code below to return a list with the solution to the prompt
-        output = str1.split(' ')
-        for i in str2.split(' '):
-            if not i in output:
+        output = []
+        list1 = str1.split(' ')
+        list1[len(list1) - 1] = list1[len(list1) - 1].strip()
+        list2 = str2.split(' ')
+        list2[len(list2) - 1] = list2[len(list2) - 1].strip()
+        for i in list1:
+            if i not in output and i != ' ':
                 output.append(i)
+        for i in listif i not in output and i != '':
+            output.append(i)
         
         return output
 
