@@ -34,9 +34,9 @@ class Solution:
         # return: list
 
         # TODO: Write code below to return a list with the solution to the prompt
-        output = str1.split()
-        for i in str2.split():
-            if i not in output:
+        output = str1.split(' ')
+        for i in str2.split(' '):
+            if not i in output:
                 output.append(i)
         
         return output
